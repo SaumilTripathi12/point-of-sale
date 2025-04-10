@@ -321,9 +321,12 @@
   width: 50%;
   margin: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .main_container .container .left .login_img {
-  width: 70%;
+  width: 50%;
+  margin: auto;
 }
 @media (max-width: 1400px) {
   .main_container .container .left .login_img {
@@ -945,6 +948,10 @@ button {
   width: 50%;
   margin: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .main_signup_container .signup_container .signup_left .signup_logo {
   margin: 0 auto;
@@ -956,9 +963,9 @@ button {
     width: 200px;
   }
 }
-.main_signup_container .signup_container .signup_left img {
-  margin: 0 auto;
-  width: 100%;
+.main_signup_container .signup_container .signup_left .signup-img {
+  width: 60%;
+  margin: 0;
 }
 .main_signup_container .signup_container .signup_right {
   width: 50%;

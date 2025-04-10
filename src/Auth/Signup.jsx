@@ -56,7 +56,7 @@ const Signup = () => {
       <div className="signup_container">
         <div className="signup_left">
           <img src={logo} className="signup_logo" alt="Logo" />
-          <img src={signup} alt="Signup Illustration" />
+          <img src={signup} alt="Signup Illustration" className="signup-img"/>
         </div>
         <div className="signup_right">
           <div className="signup_right_heading">
