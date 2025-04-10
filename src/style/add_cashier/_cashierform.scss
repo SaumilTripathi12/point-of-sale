@@ -16,26 +16,27 @@
             margin: 20px;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             gap: 50px;
 
             input {
                 color: #000;
                 margin: 20px;
                 padding: 7px 15px;
-                width: 500px;
+                width:100% ;
                 font-size: 16px;
             }
             select {
                 color: #000;
                 margin: 20px;
                 padding: 7px 15px;
-                width: 500px;
+                width: 100%;
             }
             option {
                 color: #000;
                 margin: 20px;
                 padding: 7px 15px;
-                width: 500px;
+                width: 100%;
                 font-size: 15px;
             }
             label {

@@ -1404,7 +1404,7 @@ button {
   border: none;
   border-radius: 10px;
   padding: 10px;
-  margin-left: 1200px;
+  margin-left: 1000px;
   color: #fff;
   background-color: #0080ff;
 }
@@ -1449,26 +1449,27 @@ button {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 50px;
 }
 .main_cform_div .form_div .form input {
   color: #000;
   margin: 20px;
   padding: 7px 15px;
-  width: 500px;
+  width: 100%;
   font-size: 16px;
 }
 .main_cform_div .form_div .form select {
   color: #000;
   margin: 20px;
   padding: 7px 15px;
-  width: 500px;
+  width: 100%;
 }
 .main_cform_div .form_div .form option {
   color: #000;
   margin: 20px;
   padding: 7px 15px;
-  width: 500px;
+  width: 100%;
   font-size: 15px;
 }
 .main_cform_div .form_div .form label {
