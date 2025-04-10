@@ -1,0 +1,26 @@
+.com_main_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #FFBB5C;
+    // background-color: #FFBB5C;
+
+    .com_para_div{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .com_icon_dashboard_div {
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    }
+}

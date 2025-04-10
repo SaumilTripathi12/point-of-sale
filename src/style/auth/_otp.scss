@@ -1,0 +1,66 @@
+.forgottt {
+    background-color: #ffbb5c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    .forgotpasswordmain {
+        height: 90vh;
+        margin: auto;
+        background-color: #fff;
+        width: 80%;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .forgotpasswordmainimg {
+            margin: auto;
+            img {
+                border-radius: 20px;
+            }
+        }
+        .forgotform {
+            height: 400px;
+            width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            padding: 4em;
+            gap: 40px;
+            .emailtext {
+                label {
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+                input {
+                    width: 90%;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    color: rgb(0, 0, 0);
+                    padding: 1rem;
+                    border: none;
+                    border-radius: 1rem;
+                    margin: 1rem;
+                    &::placeholder {
+                        font-size: 0.9rem;
+                        color: black;
+                    }
+                }
+            }
+            .otpbutton {
+                button {
+                    width: 50%;
+                    height: 40px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    color: white;
+                    border: none;
+                    border-radius: 1rem;
+                    background-color: #c63d2f;
+                    margin: 3.5em;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

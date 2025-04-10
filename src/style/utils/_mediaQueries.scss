@@ -1,0 +1,44 @@
+$xs_device: 376px;
+$s_device: 576px;
+$m_device: 768px;
+$l_device: 992px;
+$xl_device: 1200px;
+$xxl_device: 1400px;
+$xxxl_device: 1600px;
+
+// --define screense--
+@mixin extraSmallScreen {
+  @media (max-width: $xs_device) {
+    @content;
+  }
+}
+@mixin smallScreen {
+  @media (max-width: $s_device) {
+    @content;
+  }
+}
+@mixin mediumScreen {
+  @media (max-width: $m_device) {
+    @content;
+  }
+}
+@mixin largeScreen {
+  @media (max-width: $l_device) {
+    @content;
+  }
+}
+@mixin bigScreen {
+  @media (max-width: $xl_device) {
+    @content;
+  }
+}
+@mixin extraBigScreen {
+  @media (max-width: $xxl_device) {
+    @content;
+  }
+}
+@mixin doubleExtraBigScreen {
+  @media (max-width: $xxxl_device) {
+    @content;
+  }
+}

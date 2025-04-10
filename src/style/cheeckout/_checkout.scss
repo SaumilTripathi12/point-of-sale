@@ -1,0 +1,44 @@
+.main_checkout_div {
+    background-color: #ffbb5c;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .category_checkout {
+        width: 90%;
+        height: 90vh;
+        margin: auto;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+
+        .para_and_icon {
+            display: flex;
+            justify-content: space-between;
+            .backicon {
+                font-size: 25px;
+            }
+        }
+
+        .content {
+            display: flex;
+            margin-top: 10px;
+            overflow: auto;
+            scrollbar-width: none;
+            .checkout_card {
+                display: grid;
+                width: 80%;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .pay_userdata {
+                border-radius: 10px;
+                height: 78vh;
+                margin-top: 10px;
+                background: #22222A;
+                color: #ffffff;
+            }
+        }
+    }
+}

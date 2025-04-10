@@ -1,0 +1,147 @@
+.main_signup_container {
+    background-color: #ffbb5c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .signup_container {
+        background-color: #fff;
+        width: 90%;
+        height: 90vh;
+        margin: auto;
+        padding: 30px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        @include largeScreen {
+            width: 95%;
+            height: auto;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        .signup_left {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+
+            .signup_logo {
+                margin: 0 auto;
+                width: 300px;
+
+                @include extraBigScreen {
+                    margin: 0 auto;
+                    width: 200px;
+                }
+            }
+            img {
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        .signup_right {
+            width: 50%;
+            height: 80vh;
+            margin: auto;
+            padding: 50px;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @include extraBigScreen {
+                padding: 30px 20px;
+                gap: 10px;
+            }
+
+            h1 {
+                @include extraBigScreen {
+                    font-size: 25px;
+                }
+            }
+
+            p {
+                @include extraBigScreen {
+                    font-size: 15px;
+                }
+            }
+
+            .signup_right_form {
+                .signup_right_input {
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        input {
+                            background-color: rgb(255, 255, 255);
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            color: rgb(0, 0, 0);
+                            padding: 2em;
+                            border: none;
+                            border-radius: 1em;
+                            margin: 1em 0;
+                            width: 100%;
+                            &::placeholder {
+                                font-size: 1rem;
+                                color: rgb(142, 140, 140);
+
+                                @include extraBigScreen {
+                                    font-size: 0.85rem;
+                                }
+                            }
+
+                            @include extraBigScreen {
+                                padding: 1em;
+                                font-size: 0.875rem;
+                            }
+                        }
+                        label {
+                            font-size: 20px;
+                            font-weight: 500;
+
+                            @include extraBigScreen {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .signup_right_heading {
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+                        @include largeScreen {
+                            font-size: 18px;
+                        }
+                    }
+                    .span {
+                        .error {
+                            color: rgb(255, 0, 0);
+                        }
+                        .success {
+                            color: rgb(0, 255, 0);
+                        }
+                    }
+                }
+                .signup__btn {
+                    .signup_login {
+                        background-color: rgb(255, 0, 0);
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 10px auto;
+                        padding: 15px 55px;
+                        border-radius: 10px;
+                        border: none;
+
+                        @include largeScreen {
+                            font-size: 18px;
+                            padding: 10px 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

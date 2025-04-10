@@ -1,0 +1,44 @@
+.main_pay_div {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #ffffff;
+    .top_pay_div {
+        text-align: center;
+
+        h4{
+            font-size: 23px;
+            font-weight: 600;
+        }
+        p {
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    // .bottom_pay_div {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 20px;
+    //     .pay_method_btn {
+    //         justify-content: space-around;
+    //         display: flex;
+
+    //         .pay_btn{
+    //             background-color: #FFBB5C;
+    //             width: 100px;
+    //             // padding: 10px;
+    //             border: none;
+    //             border-radius: 5px;
+    //             height: 40px;
+    //             font-size: 18px;
+    //             font-weight: 500;
+    //             color: #fff;
+    //         }
+    //     }
+    // }
+}

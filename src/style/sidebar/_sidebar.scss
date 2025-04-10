@@ -1,0 +1,90 @@
+.sidebar {
+    width: 10%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .sidebar_profile {
+        .logo {
+            width: 150px;
+        }
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .icons_div {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            cursor: pointer;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: #000000;
+            @include extraBigScreen {
+                font-size: 18px;
+            }
+        }
+
+        .sidebar_category {
+            height: 5em;
+            width: 5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 13px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #ff1500;
+
+            @include extraBigScreen {
+                margin: 8px;
+                padding: 10px;
+                height: 4em;
+                width: 4em;
+            }
+
+            .cate_icon {
+                font-size: 50px;
+                cursor: pointer;
+                color: #fff;
+                @include extraBigScreen {
+                    font-size: 45px;
+                }
+            }
+            .dash_icon {
+                font-size: 50px;
+                cursor: pointer;
+                color: #fff;
+                @include extraBigScreen {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
+    .logout_div {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sidebar_logout {
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            background-color: #c63d2f;
+            padding: 7px;
+
+            .logout_icon {
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+}

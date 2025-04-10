@@ -1,0 +1,124 @@
+.main_container {
+    background-color: #ffbb5c;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        background-color: #fff;
+        width: 90%;
+        height: 90vh;
+        margin: auto;
+        padding: 30px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .left {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            .login_img {
+                width: 70%;
+                @include extraBigScreen {
+                   width: 80%;
+                }
+            }
+            .logo {
+                margin: 0 auto;
+                width: 300px;
+                @include extraBigScreen {
+                    margin: 0 auto;
+                    width: 200px;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            height: 80vh;
+            margin: auto;
+            padding: 50px;
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                @include extraBigScreen {
+                    font-size: 25px;
+                }
+            }
+
+            p {
+                @include extraBigScreen {
+                    font-size: 15px;
+                }
+            }
+
+            .right_form {
+                .right-input {
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        input {
+                            background-color: rgb(255, 255, 255);
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            color: rgb(0, 0, 0);
+                            padding: 2em;
+                            border: none;
+                            border-radius: 1em;
+                            margin: 1em 0;
+                            &::placeholder {
+                                font-size: 1rem;
+                                color: rgb(142, 140, 140);
+
+                                @include extraBigScreen {
+                                    font-size: 0.85rem;
+                                }
+                            }
+                            @include extraBigScreen {
+                                padding: 1em;
+                                font-size: 0.875rem;
+                            }
+                        }
+                        label {
+                            font-weight: 500;
+                            font-size: 20px;
+                            @include extraBigScreen {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .right-heading {
+                    p {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                    .span {
+                        .error {
+                            color: rgb(255, 0, 0);
+                        }
+                        .success {
+                            color: rgb(0, 255, 0);
+                        }
+                    }
+                }
+                .login_btn {
+                    .login {
+                        background-color: rgb(255, 0, 0);
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 10px auto;
+                        padding: 15px 55px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
