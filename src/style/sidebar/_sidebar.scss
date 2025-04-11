@@ -22,47 +22,44 @@
 
         p {
             cursor: pointer;
-            font-size: 20px;
+            font-size: 15px;
             text-align: center;
             font-weight: 600;
             color: #000000;
             @include extraBigScreen {
-                font-size: 18px;
+                font-size: 12px;
             }
         }
 
         .sidebar_category {
-            height: 5em;
-            width: 5em;
+            padding: 10px;
+            margin: 10px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 13px;
-            margin: 10px;
+            align-items: center; 
             border-radius: 10px;
             background-color: #ff1500;
 
             @include extraBigScreen {
                 margin: 8px;
                 padding: 10px;
-                height: 4em;
-                width: 4em;
+                
             }
 
             .cate_icon {
-                font-size: 50px;
+                font-size: 30px;
                 cursor: pointer;
                 color: #fff;
                 @include extraBigScreen {
-                    font-size: 45px;
+                    font-size: 25px;
                 }
             }
             .dash_icon {
-                font-size: 50px;
+                font-size: 30px;
                 cursor: pointer;
                 color: #fff;
                 @include extraBigScreen {
-                    font-size: 45px;
+                    font-size: 25px;
                 }
             }
         }
