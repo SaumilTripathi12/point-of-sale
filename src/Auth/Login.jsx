@@ -19,28 +19,17 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: loginSchema,
         onSubmit: async (values, action) => {
-            // try {
-            //     const response = await fetch("https://possystem.bestdevelopmentteam.com/api/cashier_loginapi.php",  //cashier login api
-            //         {
-            //             method: "POST",
-            //             headers: { "Content-Type": "application/json" },
-            //             body: JSON.stringify({
-            //                 email: values.email, 
-            //                 password: values.password, 
-            //             }),
-            //         });
+            const users = JSON.parse(localStorage.getItem("cashiers")) || [];
+            const user = users.find(
+                (user) =>
+                    user.staffemail === values.email && user.staffpassword === values.password
+            );
 
-            //     let res = await response.json();
-            //     if (res.STATUS === true) {
-            //         toast.success("LoggedIn Successfully")
-            //         navigater("/cashier")
-            //     }
-            //     else {
-            //         toast.error("Invalid credentials")
-            //     }
-            // } catch (error) {
-            //     console.log(error);
-            // }
+            if (!user) {
+                toast.error("Invalid email or password!");
+                return;
+            }
+
             toast.success("LoggedIn Successfully")
             navigater("/cashier")
         }
@@ -52,7 +41,7 @@ const Login = () => {
 
                 <div className="left">
                     <img src={logo} className='logo' />
-                    <img src={left}  className='login_img'/>
+                    <img src={left} className='login_img' />
                 </div>
 
                 <div className="right">
@@ -66,13 +55,13 @@ const Login = () => {
                                 <label htmlFor="Email">Enter Your Email</label>
                                 <input type="text" name="email" autoComplete="off" value={values.email} onBlur={handleBlur} onChange={handleChange} placeholder='Enter Email' />
                             </div>
-                            {errors.email && touched.email ? (<p style={{color: 'red'}} className='form-error'> {errors.email} </p>) : null}
+                            {errors.email && touched.email ? (<p style={{ color: 'red' }} className='form-error'> {errors.email} </p>) : null}
 
                             <div>
                                 <label htmlFor="Password">Password</label>
                                 <input type="password" name="password" autoComplete="off" value={values.password} onBlur={handleBlur} onChange={handleChange} placeholder='Enter Password' />
                             </div>
-                            {errors.password && touched.password ? (<p style={{color: 'red'}} className='form-error'> {errors.password} </p>) : null}
+                            {errors.password && touched.password ? (<p style={{ color: 'red' }} className='form-error'> {errors.password} </p>) : null}
                         </div>
 
                         <div className="login_btn">
