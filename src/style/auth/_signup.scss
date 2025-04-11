@@ -129,6 +129,9 @@
                     }
                 }
                 .signup__btn {
+                    display: flex;
+                    justify-content: start;
+                    gap: 20px;
                     .signup_login {
                         background-color: rgb(255, 0, 0);
                         color: #fff;

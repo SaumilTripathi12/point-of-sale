@@ -1053,6 +1053,11 @@ button {
 .main_signup_container .signup_container .signup_right .signup_right_form .signup_right_heading .span .success {
   color: rgb(0, 255, 0);
 }
+.main_signup_container .signup_container .signup_right .signup_right_form .signup__btn {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
 .main_signup_container .signup_container .signup_right .signup_right_form .signup__btn .signup_login {
   background-color: rgb(255, 0, 0);
   color: #fff;

@@ -33,7 +33,7 @@ const Sidebar = () => {
 
             <div className='logout_div'>
                 <div className="sidebar_logout">
-                    <Link to="/login" className='logout_icon'><FaPowerOff /> </Link>
+                    <Link to="/adminlogin" className='logout_icon'><FaPowerOff /> </Link>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import signup from "../assets/signup.avif";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import { loginSchema } from "../Schemas";
 import { toast } from "react-toastify";
@@ -135,7 +135,13 @@ const Signup = () => {
               <button className="signup_login" type="submit">
                 {submitted ? "Loading..." : "Sign Up"}
               </button>
+               <Link to={"/adminlogin"}>
+              <button className="signup_login" type="button">
+                {submitted ? "Loading..." : "Login"}
+              </button>
+              </Link>
             </div>
+        
           </form>
         </div>
       </div>
