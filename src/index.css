@@ -176,9 +176,9 @@
   scrollbar-width: none;
 }
 .main_checkout_div .category_checkout .content .checkout_card {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 80%;
-  grid-template-columns: repeat(3, 1fr);
 }
 .main_checkout_div .category_checkout .content .pay_userdata {
   border-radius: 10px;

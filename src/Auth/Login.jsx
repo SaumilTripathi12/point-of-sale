@@ -19,28 +19,30 @@ const Login = () => {
         initialValues: initialValues,
         validationSchema: loginSchema,
         onSubmit: async (values, action) => {
-            try {
-                const response = await fetch("https://possystem.bestdevelopmentteam.com/api/cashier_loginapi.php",  //cashier login api
-                    {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({
-                            email: values.email, //hello@gmail.com  "megha@gmail.com"
-                            password: values.password, //hello123
-                        }),
-                    });
+            // try {
+            //     const response = await fetch("https://possystem.bestdevelopmentteam.com/api/cashier_loginapi.php",  //cashier login api
+            //         {
+            //             method: "POST",
+            //             headers: { "Content-Type": "application/json" },
+            //             body: JSON.stringify({
+            //                 email: values.email, 
+            //                 password: values.password, 
+            //             }),
+            //         });
 
-                let res = await response.json();
-                if (res.STATUS === true) {
-                    toast.success("LoggedIn Successfully")
-                    navigater("/cashier")
-                }
-                else {
-                    toast.error("Invalid credentials")
-                }
-            } catch (error) {
-                console.log(error);
-            }
+            //     let res = await response.json();
+            //     if (res.STATUS === true) {
+            //         toast.success("LoggedIn Successfully")
+            //         navigater("/cashier")
+            //     }
+            //     else {
+            //         toast.error("Invalid credentials")
+            //     }
+            // } catch (error) {
+            //     console.log(error);
+            // }
+            toast.success("LoggedIn Successfully")
+            navigater("/cashier")
         }
     })
 

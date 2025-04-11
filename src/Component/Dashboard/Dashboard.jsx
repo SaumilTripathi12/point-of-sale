@@ -29,9 +29,10 @@ const Dashboard = () => {
 
   const totalCustomers = allOrders.length;
   const totalSale = allOrders.reduce(
-    (sum, order) => sum + order.total_amount,
+    (sum, order) => sum + Number(order.total_amount),
     0
   );
+
 
   return (
     <div className="main_dashboard_div">

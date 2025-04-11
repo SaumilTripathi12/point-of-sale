@@ -66,8 +66,11 @@ const Checkout = () => {
     const orderId = "ORD" + Date.now();
     const date = new Date().toLocaleDateString("en-IN");
 
-    const total_amount = productData.reduce((sum, item) => sum + item.price, 0);
-
+    // const total_amount = productData.reduce((sum, item) => sum + item.price, 0);
+    const total_amount = productData.reduce(
+      (sum, item) => sum + Number(item.price),
+      0
+    );
     const order = {
       id: orderId,
       date,
