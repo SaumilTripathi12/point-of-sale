@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 const Receipt = () => {
@@ -40,12 +40,25 @@ const Receipt = () => {
     });
   }, []);
 
+
+  const location = useLocation();
+
   useEffect(() => {
-    const currentOrder = JSON.parse(localStorage.getItem("current_order"));
-    if (currentOrder) {
-      setReceiptData(currentOrder);
+    // Step 1: Get ID from URL
+    const searchParams = new URLSearchParams(location.search);
+    const orderId = searchParams.get("order_id");
+
+    if (orderId) {
+      // Step 2: Get all orders from localStorage
+      const allOrders = JSON.parse(localStorage.getItem("orders")) || [];
+
+      // Step 3: Find the matching order
+      const order = allOrders.find((o) => o.id.toString() === orderId.toString());
+
+      setReceiptData(order);
     }
-  }, []);
+  }, [location.search]);
+
 
   return (
     <div className="receipt">
